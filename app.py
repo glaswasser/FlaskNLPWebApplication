@@ -4,7 +4,7 @@ from flask_bootstrap import Bootstrap
 from flask_uploads import UploadSet,configure_uploads,IMAGES,DATA,ALL
 from flask_sqlalchemy import SQLAlchemy 
 
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 import os
 import datetime
 import time
@@ -28,6 +28,7 @@ from gensim import corpora, models
 
 
 app = Flask(__name__)
+
 Bootstrap(app)
 db = SQLAlchemy(app)
 
@@ -206,7 +207,7 @@ def dataupload():
 						num_topics = str(num_topics))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, use_reloader = False)
 
 
 

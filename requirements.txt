@@ -1,0 +1,11 @@
+Flask_SQLAlchemy==2.5.1
+matplotlib==3.3.2
+gensim==4.0.1
+Werkzeug==1.0.1
+bertopic==0.6.0
+Flask_Bootstrap==3.3.7.1
+numpy==1.19.2
+Flask==1.1.2
+nltk==3.5
+Flask_Uploads==0.2.1
+pandas==1.2.3
